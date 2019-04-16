@@ -19,13 +19,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epf-P8-JGs">
-                                <rect key="frame" x="164" y="422" width="46" height="30"/>
+                                <rect key="frame" x="165" y="422" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Begin!"/>
                                 <connections>
                                     <segue destination="ICM-Q6-N5L" kind="presentation" identifier="begin" id="FlO-FX-pCO"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rmQ-Hj-uJ1">
+                                <rect key="frame" x="67" y="75" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">You is a Doggo trying to infiltrate the Cat Pack. They start to suspect you after a week. Finish their questionaire to prove you is a cat.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468" y="133"/>
+            <point key="canvasLocation" x="-442" y="896"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nQo-no-dfl">
@@ -46,19 +54,26 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7c-Av-phE">
                                 <rect key="frame" x="87" y="505" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Meow!"/>
                                 <connections>
-                                    <segue destination="vdA-b6-O6G" kind="presentation" identifier="dogChoice1" id="0Mo-3n-fcx"/>
+                                    <segue destination="vdA-b6-O6G" kind="presentation" identifier="catChoice1" id="0Mo-3n-fcx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F0-tJ-9Pd">
-                                <rect key="frame" x="244" y="505" width="46" height="30"/>
+                                <rect key="frame" x="247" y="505" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Woof!"/>
                                 <connections>
-                                    <segue destination="vdA-b6-O6G" kind="presentation" identifier="catChoice1" id="exi-c6-q3n"/>
+                                    <segue destination="vdA-b6-O6G" kind="presentation" identifier="dogChoice1" id="exi-c6-q3n"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Q1. Wat does da cat say?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rf9-Dl-bPg">
+                                <rect key="frame" x="67" y="72" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3cI-4E-sAN"/>
@@ -79,7 +94,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgH-8k-xCE">
                                 <rect key="frame" x="87" y="505" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Box!"/>
                                 <connections>
                                     <segue destination="xUE-8i-uAa" kind="presentation" identifier="catChoice2" id="ZHQ-y9-84Y"/>
                                 </connections>
@@ -87,11 +102,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwD-jB-q12">
                                 <rect key="frame" x="249" y="505" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Toy!"/>
                                 <connections>
                                     <segue destination="xUE-8i-uAa" kind="presentation" identifier="dogChoice2" id="9Ih-aT-HPU"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Q2. Wat dos cat prefur, toy, or toy's box?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vhF-eO-8MY">
+                                <rect key="frame" x="67" y="56" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PAk-0I-RGU"/>
@@ -110,19 +132,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qes-7p-OIl">
-                                <rect key="frame" x="75" y="514" width="46" height="30"/>
+                                <rect key="frame" x="16" y="498" width="213" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Domination of known universe!"/>
                                 <connections>
-                                    <segue destination="5j8-NG-M6i" kind="presentation" id="Vco-7o-YeH"/>
+                                    <segue destination="5j8-NG-M6i" kind="presentation" identifier="catChoice3" id="Vco-7o-YeH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrF-Xe-cIP">
-                                <rect key="frame" x="261" y="514" width="46" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Q3. Wat is cat's main goal?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BFl-YB-LTi">
+                                <rect key="frame" x="67" y="52" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrF-Xe-cIP">
+                                <rect key="frame" x="259" y="523" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Snuggles!"/>
                                 <connections>
-                                    <segue destination="5j8-NG-M6i" kind="presentation" identifier="catChoice3" id="nbf-fJ-gHR"/>
+                                    <segue destination="5j8-NG-M6i" kind="presentation" identifier="dogChoice3" id="nbf-fJ-gHR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -132,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NpB-Ak-LkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2511" y="133"/>
+            <point key="canvasLocation" x="2509.5999999999999" y="132.68365817091455"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ldE-Rv-RNe">
@@ -143,21 +172,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkh-QF-Udg">
-                                <rect key="frame" x="164" y="517" width="46" height="30"/>
+                                <rect key="frame" x="145" y="517" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Begin again!"/>
                                 <connections>
-                                    <segue destination="p75-eW-hhn" kind="presentation" identifier="isDog" id="X0H-n2-PVJ"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="g8e-LU-U4r"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNg-X4-mxa">
-                                <rect key="frame" x="164" y="563" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pexels-photo-416208" translatesAutoresizingMaskIntoConstraints="NO" id="EM5-aq-roc">
+                                <rect key="frame" x="67" y="41" width="240" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="9Fe-yd-RTD" kind="presentation" identifier="isCat" id="Jda-M0-t62"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="face-nerve-paralysis" translatesAutoresizingMaskIntoConstraints="NO" id="2BM-Gb-PYQ">
+                                <rect key="frame" x="67" y="228" width="240" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UmI-7f-z0O"/>
@@ -165,42 +194,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Es5-mq-AHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3594" y="133"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="T3T-p6-oRo">
-            <objects>
-                <viewController id="p75-eW-hhn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OaU-BW-7qH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="O6J-K3-K48"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g25-wd-sYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5066" y="483"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="2uQ-xi-xxb">
-            <objects>
-                <viewController id="9Fe-yd-RTD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rwt-Lz-9Jg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="pJB-nS-uxv"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GH7-Ke-o3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5074" y="-290"/>
+            <point key="canvasLocation" x="3592.8000000000002" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="face-nerve-paralysis" width="590" height="428"/>
+        <image name="pexels-photo-416208" width="500" height="333"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Vco-7o-YeH"/>
-        <segue reference="9Ih-aT-HPU"/>
-        <segue reference="0Mo-3n-fcx"/>
+        <segue reference="ZHQ-y9-84Y"/>
+        <segue reference="exi-c6-q3n"/>
     </inferredMetricsTieBreakers>
 </document>
